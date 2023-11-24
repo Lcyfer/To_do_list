@@ -49,9 +49,11 @@ function actedit(){
   const edtbtn = document.querySelectorAll(".edtbtn");
   const updtcont = document.querySelectorAll(".updtcont");
   const inputs = document.querySelectorAll(".intpcont textarea");
+  const edtcont=document.querySelectorAll(".edtcont");
   edtbtn.forEach((eb,i) => { 
     eb.addEventListener("click", () => {
       updtcont[i].style.display = "block";
+      edtcont[i].style.display="none";
       inputs[i].disabled = false;
       inputs[i].style.color="blue";
     });
@@ -61,12 +63,13 @@ function actedit(){
 function actsave() {
   const svbtn = document.querySelectorAll(".svbtn");
   const inputs = document.querySelectorAll(".intpcont textarea");
-
   svbtn.forEach((sb, i) => {
     sb.addEventListener("click", () => {
       itemsA[i] = inputs[i].value;
       localStorage.setItem("items", JSON.stringify(itemsA));
+      
       location.reload();
+      
     });
   });
 }
@@ -75,11 +78,13 @@ function actcan(){
   const cabtn = document.querySelectorAll(".cabtn");
   const updtcont = document.querySelectorAll(".updtcont");
   const inputs = document.querySelectorAll(".intpcont textarea");
+  const edtcont=document.querySelectorAll(".edtcont");
   cabtn.forEach((ca,i) => { 
     ca.addEventListener("click", () => {
       updtcont[i].style.display = "none";
       inputs[i].disabled = true;
       inputs[i].style.color="black";
+      edtcont[i].style.display="block"
     });
   });
 }
