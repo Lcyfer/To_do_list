@@ -1,0 +1,112 @@
+body{
+  background-color: white;
+}
+.updtcont{
+  display: none;
+}
+form{
+  background-image:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) );
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 60%;
+  position: relative;
+  left: 25%;
+box-shadow: 14px 16px 16px -11px rgba(28,25,25,0.42);
+}
+form h1{
+font-family: 'Jacques Francois Shadow', serif;
+color: Grey;
+text-align: center;
+}
+
+input[type="text"]{
+  color: blue;
+  overflow: scroll;
+font-family: 'Shadows Into Light Two', cursive;
+font-size: 20px;
+width: 50%;
+height: 30px;
+position: relative;
+left: 20%;
+outline: none;
+font-weight: bold;
+}
+#enter{
+  padding:0 10px 0 10px ;
+  background-color: gray;
+  position: relative;
+  left: 20%;
+  border-radius: 10px;
+box-shadow: 14px 16px 16px -11px rgba(28,25,25,0.42);
+height: 40px;
+font-family: 'Jacques Francois Shadow', serif;
+color: wheat;
+}  
+form h2{
+font-family: 'Vast Shadow', serif;
+color: gray;
+position: relative;
+left: 20%;
+}
+.item{
+  position:relative;
+  left: 20%;
+  
+}
+textarea{
+  width: 50%;
+  color: black;
+  overflow: scroll;
+  outline: none;
+font-family: 'Shadows Into Light Two', cursive;
+font-size: 20px;
+}
+.edtcont,.updtcont{
+  position: relative;
+ left: 52%;
+  top: -60px;
+}
+.dltbtn,.edtbtn,.svbtn,.cabtn{
+  font-size: 15px;
+  color: crimson;
+font-family: 'Shadows Into Light Two', cursive;
+ 
+}
+ @media (max-width:480px){
+  form{
+    width: 95%;
+    margin: 0px -50px 0 0;
+    left: 0;
+  }
+  .item{
+    left: 0;
+  }
+input[type="text"]{
+  width: 70%;
+  left: 0;
+}
+#enter{
+  left: 0;
+}
+.v1{
+  display: none;
+  
+}
+.edtcont,.updtcont{
+  left: 75%;
+ top:-70px;
+}
+.svbtn,.cabtn{
+  font-size: 12px;
+  margin-top: 5px;
+ 
+}
+  textarea{
+    width: 70%;
+  }
+.dltbtn,.edtbtn{
+  font-size: 30px;
+ 
+}
+}
