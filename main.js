@@ -17,8 +17,8 @@ function disp(){
       <div class="intpcont">
         <textarea disabled>${itemsA[i]} </textarea>
          <div class="edtcont">
-           <i class="fa-solid fa-check dltbtn"><span class="v1">Delete<span></i>
-           <i class="fa-solid fa-pen edtbtn"><span class="v1">Edit</span></i>
+           <i class="dltbtn"><img src="delete.png" height="40px"><span class="v1">Delete<span></i>
+           <i class="edtbtn"><img src="edit.png" height="40px"><span class="v1">Edit</span></i>
          </div>
          <div class="updtcont">
            <input type="button"class="svbtn" value="Save">
